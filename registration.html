@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ABC College</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+     <div class="header-inner">
+        <img src="https://th.bing.com/th/id/OIP.P2Brp_vHzK1dCYIJ5BF17wHaFj?w=226&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="ABC College Logo" width="80" height="80">
+        <div class="header-text">
+            <h1>ABC College</h1>
+            <p>Excellence in Education Since 1990</p>
+        </div>
+        
+         <div class="header-auth">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="registration.html">Registration</a>
+          <button class="theme-toggle">🌙 Dark</button>
+         </div>
+
+         </div>
+    </header>
+    
+
+   <nav>
+  <button class="hamburger">☰</button>
+  <div class="nav-links-wrapper">
+         <a href="homepage.html" target="_blank">Home</a> |
+        <a href="aboutus.html" target="_blank">About Us</a> |
+        <a href="courses.html" target="_blank">Courses</a> |
+        <a href="admission.html" target="_blank">Admissions</a> |
+        <a href="faculty.html" target="_blank">Faculty</a> |
+        <a href="contactus.html" target="_blank">Contact Us</a> |
+        <a href="FAQ's.html" target="_blank">FAQs</a>
+  </div>
+  </nav>
+
+
+    <main>
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h3>Personal Information</h3>
+            <p><label>Full Name: <input type="text" name="fullname" placeholder="Enter your name" required></label></p>
+            <p><label>Father Name: <input type="text" name="fathername" placeholder="Father's name" required></label></p>
+            <p><label>Email: <input type="email" name="email" placeholder="example@email.com" required></label></p>
+            <p><label>Password: <input type="password" name="password" placeholder="Create password" required></label></p>
+            <p><label>Phone: <input type="tel" name="phone" placeholder="0300-1234567" required></label></p>
+            <p><label>Age: <input type="number" name="age" min="15" max="60" required></label></p>
+            <p><label>Date of Birth: <input type="date" name="dob" required></label></p>
+            <p>Gender:
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </p>
+
+            <h3>Academic Information</h3>
+            <p><label>Department:
+                <select name="department" required>
+                    <option value="">-- Select Department --</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Design & Arts</option>
+                    <option>Business Administration</option>
+                </select>
+            </label></p>
+            <p><label>Semester:
+                <select name="semester" required>
+                    <option value="">-- Select Semester --</option>
+                    <option>1st</option><option>2nd</option><option>3rd</option>
+                    <option>4th</option><option>5th</option><option>6th</option>
+                </select>
+            </label></p>
+
+            <h3>Skills</h3>
+            <p>
+                <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="bootstrap"> Bootstrap</label>
+            </p>
+
+            <h3>Additional Information</h3>
+            <p><label>Address:<br>
+                <textarea name="address" rows="4" cols="40" placeholder="Enter your complete address" required></textarea>
+            </label></p>
+            <p><label>Upload Picture: <input type="file" name="profilepic" accept="image/*" required></label></p>
+
+            <p>
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <button id="backToTop">↑</button>
+        <address>
+           ABC College,Jahangir Road, Canal Rd, Nabi Pura, Lahore, Pakistan<br>
+            Phone: +92 42 1234567<br>
+            Email: info@abccollege.edu.pk
+        </address>
+        <p>Office Hours: Monday - Friday | 9:00 AM - 5:00 PM</p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">YouTube</a>
+        </p>
+        <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
